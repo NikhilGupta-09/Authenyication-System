@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.2/core.css">
+    <script defer src="https://pyscript.net/releases/2024.10.2/core.js" ></script> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">E-Authentication System</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#python-script">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to our E-Authentication web page. This is an example of a modern, clean design.</p>
+            <p>This web page allows user to authenticate through various features and access our webpage.</p>
+            <p>In the era of digital transformation, ensuring secure user authentication has become paramount to protect sensitive data and prevent unauthorized access. This paper presents an innovative E-Authentication System that integrates three advanced verification techniques:</p>
+            <p> 1.	Face recognition</p>
+            <p> 2.	One-Time Password (OTP) verification and</p> 
+            <p> 3.	QR code verification.</p> 
+            <p>The system employs face recognition technology to identify users through their unique facial features, offering a seamless and contactless method of authentication.</p> 
+            <p>To further strengthen the authentication process, the system incorporates OTP verification, which generates a temporary code sent to the user's registered mobile device or email. This ensures that even if an attacker compromises a user's credentials, they cannot access the system without the OTP.</p>
+            <p>Additionally, QR code verification introduces a modern and efficient method for secure access. Users can quickly scan unique QR codes generated for their accounts, facilitating easy and rapid authentication.</p>
+            <p>By combining these three layers of security, the e-Authentication System offers a robust solution that significantly mitigates the risks associated with identity theft and unauthorized access. The multi-factor approach not only enhances security but also improves user experience, making it suitable for various applications, including online banking, e-commerce, and enterprise environments. This innovative system stands as a proactive measure against evolving cyber threats, fostering user trust and confidence in digital platforms.</p>
+        </section>
+
+        <section id="python-script" class="section">
+            <h2>Run Python Script</h2>
+            <button id="open-python-file" onclick="runScript()">Run Authentication</button>
+            <py-script src="C:\Users\nikhi\OneDrive\Documents\Minor\app.py"></py-script>
+            <py-script id="run-authentication" src="C:\Users\nikhi\On
+            <script type="py" src="C:\Users\nikhi\OneDrive\Documents\Minor\app.py" config="./pyscript.toml" terminal></script>
+        </section>
+
+        <section id="authentication-methods" class="section">
+            <h2>Authentication Methods</h2>
+            <form action="/run-auth" method="post">
+                <button type="submit" name="auth_type" value="otp">OTP Authentication</button>
+                <button type="submit" name="auth_type" value="face">Face Authentication</button>
+                <button type="submit" name="auth_type" value="qr">QR Code Authentication</button>
+            </form>
+        </section>  
+        
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My E-Authentication System. All rights reserved.</p>
+            <p>&copy; Created by Nikhil Gupta</p>
+        </div>
+    </footer>
+    <script>
+        function runScript(){
+            fetch("/").then((response)=>{
+                console.log(response);
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

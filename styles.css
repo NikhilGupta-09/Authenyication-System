@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpapers.com/images/featured/professional-photo-background-zb0abc8ysodf81ui.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire viewport without distorting */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    image-rendering: -webkit-optimize-contrast; /* Optimizes the image quality */
+    image-rendering: crisp-edges; /* Makes the edges sharper */
+    image-rendering: pixelated; /* Ensures pixelated style for small images */
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 1rem;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 2rem auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 1rem;
+    text-align: center; /* Centers the text of all <h2> tags */
+}
+
+/* Button Styles */
+button {
+    background-color: hsl(202, 89%, 44%);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    width: 100%; /* Ensures all buttons have the same width */
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center; /* Align text to the center */
+    display: block; /* Ensures buttons stack vertically */
+    margin-bottom: auto; /* Adds spacing between buttons */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+
+/* Container for Buttons (Optional, for Consistent Alignment) */
+/*button + button {
+    margin-top: 0.5rem; /* Adds spacing between adjacent buttons *
+}*/
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 250px; /* Adjust to fit your layout */
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
